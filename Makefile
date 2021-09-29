@@ -10,6 +10,7 @@ all: $(DESTDIR)/ucprint
 .PHONY: demo
 demo: $(DESTDIR)/ucprint
 	$< 0x0067 0x0308
+	$< 0915 094D 0937 093F
 
 .PHONY: install
 install: all | $(PREFIX)/bin
